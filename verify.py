@@ -80,3 +80,6 @@ async def on_ready():
     )
             embed.set_footer(text="Space BOT#2204", icon_url="https://media.discordapp.net/attachments/766098691962437672/766099536694345738/QNT.png?width=833&height=469")
             await message.channel.send(embed=embed)
+            
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
