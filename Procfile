@@ -1,1 +1,1 @@
-worker: python miso.py
+worker: python verify.py
