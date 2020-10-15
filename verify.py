@@ -34,7 +34,9 @@ async def on_ready():
         for (m) in range(5):
             await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(name=messages[(m)], type=discord.ActivityType.watching))
             await asyncio.sleep(4)
- 
+            
+@client.event
+async def on_message(message):
     if message.content == ".인증":
         Image_captcha = ImageCaptcha()
         msg = ""
